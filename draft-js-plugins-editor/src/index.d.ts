@@ -47,7 +47,7 @@ export interface EditorPlugin {
   keyBindingFn?(
     e: KeyboardEvent,
     pluginFunctions: PluginFunctions
-  ): DraftEditorCommand | null;
+  ): DraftEditorCommand | undefined;
   handleReturn?(
     e: KeyboardEvent,
     editorState: EditorState,
